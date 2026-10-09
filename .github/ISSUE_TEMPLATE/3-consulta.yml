@@ -1,0 +1,28 @@
+name: Consulta a la facultad
+description: Algo que tenemos que preguntarle a la facultad antes de poder avanzar.
+title: "Consulta: "
+labels: ["consulta"]
+body:
+  - type: input
+    id: a-quien
+    attributes:
+      label: A quién se le pregunta
+      placeholder: Área o persona (sin datos personales)
+    validations:
+      required: true
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: Qué necesitamos saber
+    validations:
+      required: true
+  - type: textarea
+    id: bloquea
+    attributes:
+      label: Qué bloquea
+      description: Historias o tareas que esperan esta respuesta.
+  - type: textarea
+    id: respuesta
+    attributes:
+      label: Respuesta
+      description: Se completa cuando llega la respuesta. Después se cierra la issue.

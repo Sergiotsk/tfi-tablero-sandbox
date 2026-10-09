@@ -1,0 +1,40 @@
+name: Historia de usuario
+description: Algo que ve o usa un usuario del sistema.
+title: "H?: "
+labels: ["historia"]
+body:
+  - type: textarea
+    id: historia
+    attributes:
+      label: Historia
+      description: Quién, qué quiere y para qué.
+      value: |
+        Como **[rol]**, quiero **[acción]**, para **[beneficio]**.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: >
+        Un escenario por criterio, en formato Dado / Cuando / Entonces. Escribilo en lenguaje del
+        negocio, no de la pantalla.
+      render: gherkin
+      value: |
+        Escenario: ...
+          Dado ...
+          Cuando ...
+          Entonces ...
+    validations:
+      required: true
+  - type: textarea
+    id: tareas
+    attributes:
+      label: Tareas técnicas
+      description: Se cargan como sub-issues de esta historia.
+      placeholder: "- T.. ..."
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas y dependencias
+      placeholder: Qué tiene que estar en Hecho antes, dudas abiertas, etc.

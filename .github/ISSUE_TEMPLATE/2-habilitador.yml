@@ -1,0 +1,25 @@
+name: Habilitador
+description: Algo técnico que hace falta antes de las historias (monorepo, CI, base de datos...).
+title: "T??: "
+labels: ["habilitador"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que hacer
+    validations:
+      required: true
+  - type: textarea
+    id: para-que
+    attributes:
+      label: Qué habilita
+      description: Qué historias o tareas dependen de esto.
+  - type: textarea
+    id: hecho
+    attributes:
+      label: Cuándo está hecho
+      description: Condiciones verificables.
+      value: |
+        - [ ] ...
+    validations:
+      required: true

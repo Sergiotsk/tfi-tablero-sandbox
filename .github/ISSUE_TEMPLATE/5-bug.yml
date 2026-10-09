@@ -1,0 +1,31 @@
+name: Bug
+description: Algo que funciona distinto de lo que dicen los criterios de aceptación.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué pasa
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué debería pasar
+      description: Si se puede, citá el criterio de aceptación que no se cumple.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo reproducirlo
+      value: |
+        1.
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Rama, navegador, capturas (sin datos personales reales).

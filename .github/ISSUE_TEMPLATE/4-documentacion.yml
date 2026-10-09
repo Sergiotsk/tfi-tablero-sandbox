@@ -1,0 +1,23 @@
+name: Documentación
+description: Una sección del informe o del Documento de Seguimiento.
+title: "Doc: "
+labels: ["documentación"]
+body:
+  - type: input
+    id: seccion
+    attributes:
+      label: Sección
+      placeholder: "Ej.: 1.2 Justificación, objetivos y alcance"
+    validations:
+      required: true
+  - type: textarea
+    id: contenido
+    attributes:
+      label: Qué tiene que cubrir
+    validations:
+      required: true
+  - type: textarea
+    id: fuentes
+    attributes:
+      label: De dónde sale
+      description: Tarjetas, diagramas o documentos que sirven de base.
