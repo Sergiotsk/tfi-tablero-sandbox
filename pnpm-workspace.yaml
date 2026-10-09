@@ -1,0 +1,4 @@
+# Ejemplo para el sandbox del tablero: estructura del monorepo.
+packages:
+  - "apps/*"
+  - "packages/*"
