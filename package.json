@@ -1,0 +1,6 @@
+{
+  "name": "tfi-tablero-sandbox",
+  "private": true,
+  "description": "Ejemplo para el sandbox del tablero: raíz del monorepo.",
+  "packageManager": "pnpm@9.0.0"
+}
